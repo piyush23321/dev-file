@@ -18,7 +18,7 @@ elif [[ "$COMMIT_MESSAGE" == *fix* ]]; then
 elif [[ "$COMMIT_MESSAGE" == *upd* ]]; then
   EMOJI=":boom:"
 else
-  EMOJI="🤖"
+  EMOJI=""
 fi
 
 
@@ -40,4 +40,4 @@ echo "- $EMOJI $COMMIT_MESSAGE ($CURRENT_DATE, $CURRENT_USER)" >> "$CHANGELOG_FI
 git add .
 
 # Create the commit with the given message
-git commit -m "$COMMIT_MSG"
+# git commit -m "$COMMIT_MSG"
